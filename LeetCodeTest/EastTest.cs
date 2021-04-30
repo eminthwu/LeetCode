@@ -17,7 +17,7 @@ namespace LeetCodeTest
             var expectedResult = 5;
 
             //Action
-            int outputLengh = RemoveElement.RemoveElement(givenArray, givenVal);
+            int outputLengh = Easy.RemoveElement(givenArray, givenVal);
 
             //Assert
             Assert.AreEqual(outputLengh, expectedResult);
