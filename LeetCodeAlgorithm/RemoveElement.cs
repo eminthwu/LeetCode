@@ -11,13 +11,45 @@ namespace LeetCodeAlgorithm
 
         public static int RemoveElement(int[] nums, int val)
         {
-            return 0;
+            bool isChanged = true;
+            var originalLen = nums.Length;
+
+            while (isChanged)
+            {
+                isChanged = false;
+
+                for (int i = 0; i < originalLen - 1; i++)
+                {
+                    if (nums[i] == val && i < originalLen - 1)
+                    {
+                        var curNum = nums[i];
+
+                        for (int j = i; j < nums.Length - 1; j++)
+                        {
+                            nums[j] = nums[j + 1];
+                        }
+
+                        nums[nums.Length - 1] = curNum;
+                        isChanged = true;
+                        originalLen -= 1;
+                        break;
+                    }
+                }
+            }
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == val)
+                    return i;
+            }
+
+            return nums.Length;
         }
 
         public static int RemoveElement_bad(int[] nums, int val)
         {
             //when use Resize, it create a new object
-            
+
             var hasTarget = false;
             var originalLength = nums.Length;
 
