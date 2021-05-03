@@ -29,6 +29,17 @@ namespace LeetCodeTest
             Assert.AreEqual(outputLengh, expectedVal);
             expectedArr.ToExpectedObject().ShouldEqual(givenArr.Take(outputLengh).ToArray());
         }
+
+        [Test]
+        [TestCase(new int[] { 3, 1, 2, 10, 1 }, new int[] { 3, 4, 6, 16, 17 })]
+        public void RunningSumOf1dArrayTest(int [] givenArr, int[] expectedArr)
+        {
+            //Action
+            int[] outputArr = Easy.RunningSum(givenArr);
+
+            //Assert
+            expectedArr.ToExpectedObject().ShouldEqual(outputArr);
+        }
     }
 
 }
