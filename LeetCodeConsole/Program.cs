@@ -14,8 +14,12 @@ namespace LeetConsole
             //var nums = new int[] { 2 }; var val = 3;
             //var count = Easy.RemoveElement(nums, val);
             //Easy.RemoveElement(new int[] { 3,2,2,3 }, 3);
-            var nums = new int[] { 3, 1, 2, 10, 1 };
-            Easy.RunningSum(nums);
+            //var nums = new int[] { 3, 1, 2, 10, 1 };
+            //Easy.RunningSum(nums);
+            WordFilter filter = new WordFilter(new string[] { "cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba" });
+            filter.F("a", "aa");
+            //WordFilter filter = new WordFilter(new string[] { "apple" });
+            //filter.F("a", "e");
         }
     }
 }
