@@ -1,4 +1,5 @@
 ﻿using LeetCodeAlgorithm;
+using LeetCodeAlgorithm.Medium;
 using System;
 
 namespace LeetConsole
@@ -16,10 +17,12 @@ namespace LeetConsole
             //Easy.RemoveElement(new int[] { 3,2,2,3 }, 3);
             //var nums = new int[] { 3, 1, 2, 10, 1 };
             //Easy.RunningSum(nums);
-            WordFilter filter = new WordFilter(new string[] { "cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba" });
-            filter.F("a", "aa");
+            //WordFilter filter = new WordFilter(new string[] { "cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba" });
+            //filter.F("a", "aa");
             //WordFilter filter = new WordFilter(new string[] { "apple" });
             //filter.F("a", "e");
+            Non_decreasingArray.CheckPossibility(new int[] { 1, 4, 1, 2 });
+            Non_decreasingArray.CheckPossibility(new int[] { 5, 7, 1, 8 });
         }
     }
 }
