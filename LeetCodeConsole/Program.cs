@@ -21,8 +21,9 @@ namespace LeetConsole
             //filter.F("a", "aa");
             //WordFilter filter = new WordFilter(new string[] { "apple" });
             //filter.F("a", "e");
-            Non_decreasingArray.CheckPossibility(new int[] { 1, 4, 1, 2 });
-            Non_decreasingArray.CheckPossibility(new int[] { 5, 7, 1, 8 });
+            //Non_decreasingArray.CheckPossibility(new int[] { 1, 4, 1, 2 });
+            //Non_decreasingArray.CheckPossibility(new int[] { 5, 7, 1, 8 });
+            Easy.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
         }
     }
 }
